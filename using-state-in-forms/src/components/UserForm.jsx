@@ -22,19 +22,6 @@ const UserForm = () =>
         setFormData(updatedData);
     };   
 
-/*
-        const handleChange = (event) =>
-        {
-        const {name, value} = event.target;
-
-        setFormData((prevData) => (
-            {
-                ...prevData,
-                [name]: value    
-            }));
-    };
-*/
-
     return (
         <div className="feedbackForm">
             <form>
@@ -87,10 +74,8 @@ const UserForm = () =>
                                             || !formData.email.trim().length 
                                             || !formData.feedback.trim().length}>
                         Submit
-                    </button>
-               
+                    </button>               
                 </fieldset>
-
             </form>
 
             <div className="preview">
